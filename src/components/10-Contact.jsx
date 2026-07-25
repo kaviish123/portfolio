@@ -118,7 +118,7 @@ function Contact() {
             </p>
 
             <a
-              href="/Kavi_Ishwarrya_S_K.pdf"
+              href="/resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="contact-btn"

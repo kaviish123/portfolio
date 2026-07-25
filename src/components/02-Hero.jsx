@@ -47,14 +47,14 @@ function Hero() {
 
           <div className="hero-buttons">
             <a
-              href="/Kavi_Ishwarrya_S_K.pdf"
+              href="/resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="btn primary-btn"
             >
               <FaDownload />
               Download Resume
-            </a>
+            </a>c
 
             <a href="#contact" className="btn secondary-btn">
               <FaEnvelope />
