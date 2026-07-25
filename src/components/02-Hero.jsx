@@ -54,7 +54,7 @@ function Hero() {
             >
               <FaDownload />
               Download Resume
-            </a>c
+            </a>
 
             <a href="#contact" className="btn secondary-btn">
               <FaEnvelope />
