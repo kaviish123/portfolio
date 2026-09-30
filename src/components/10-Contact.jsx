@@ -6,6 +6,7 @@ import {
   FaMapMarkerAlt,
   FaPhoneAlt,
 } from "react-icons/fa";
+import { SiLeetcode } from "react-icons/si";
 import "./10-Contact.css";
 
 function Contact() {
@@ -39,10 +40,9 @@ function Contact() {
           transition={{ delay: 0.2 }}
           viewport={{ once: true }}
         >
-          I'm always excited to connect with professionals, recruiters,
-          and fellow learners. Whether you have an internship opportunity,
-          a project collaboration, or simply want to connect, I'd be happy
-          to hear from you.
+          If you have an internship opening in embedded systems, IoT or
+          software development, or want to talk about any of my projects,
+          email me or reach out on LinkedIn.
         </motion.p>
 
         <div className="contact-grid">
@@ -59,21 +59,21 @@ function Contact() {
 
             <div className="contact-item">
               <FaEnvelope />
-              <a href="mailto:YOUR_EMAIL@gmail.com">
+              <a href="mailto:kaviishwarryask@gmail.com">
                 kaviishwarryask@gmail.com
               </a>
             </div>
 
             <div className="contact-item">
               <FaPhoneAlt />
-              <a href="tel:+91XXXXXXXXXX">
-                +91 8667545331
+              <a href="tel:+918667545331">
+                +91 86675 45331
               </a>
             </div>
 
             <div className="contact-item">
               <FaMapMarkerAlt />
-              <span>Tamil Nadu, India</span>
+              <span>Erode, Tamil Nadu, India (open to relocation)</span>
             </div>
 
             <div className="social-links">
@@ -96,6 +96,15 @@ function Contact() {
                 <FaLinkedin />
               </a>
 
+              <a
+                href="https://leetcode.com/u/s9hXtuAA2E/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LeetCode"
+              >
+                <SiLeetcode />
+              </a>
+
             </div>
 
           </motion.div>
@@ -111,10 +120,9 @@ function Contact() {
             <h3>Open to Internship Opportunities</h3>
 
             <p>
-              I'm currently looking for internship and entry-level software
-              engineering opportunities where I can apply my knowledge,
-              continue learning, and contribute to meaningful projects while
-              growing as a developer.
+              I graduate in 2027 and am looking for an internship (including
+              a final-semester internship) or an entry-level role in embedded
+              systems, IoT or software development.
             </p>
 
             <a

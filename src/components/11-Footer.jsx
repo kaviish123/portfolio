@@ -1,4 +1,5 @@
 import { FaArrowUp, FaGithub, FaLinkedin } from "react-icons/fa";
+import { SiLeetcode } from "react-icons/si";
 import "./11-Footer.css";
 
 function Footer() {
@@ -60,10 +61,18 @@ function Footer() {
             <FaLinkedin />
           </a>
 
+          <a
+            href="https://leetcode.com/u/s9hXtuAA2E/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <SiLeetcode />
+          </a>
+
         </div>
 
         <p className="footer-copy">
-          © {new Date().getFullYear()} Kavi Ishwarrya S K. Built with curiosity, dedication, and continuous learning.
+          © {new Date().getFullYear()} Kavi Ishwarrya S K. 
         </p>
 
       </div>

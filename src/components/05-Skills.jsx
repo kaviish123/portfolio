@@ -3,9 +3,38 @@ import {
     FaAws,
     FaJava,
     FaLaptopCode,
+    FaMicrochip,
     FaUsers
 } from "react-icons/fa";
 import "./05-Skills.css";
+
+const skillGroups = [
+  {
+    icon: <FaJava className="skill-icon" />,
+    title: "Programming",
+    items: ["Java", "Python", "C / C++", "SQL and MySQL", "Data Structures & Algorithms", "Object-Oriented Programming"],
+  },
+  {
+    icon: <FaMicrochip className="skill-icon" />,
+    title: "Embedded & IoT",
+    items: ["Arduino", "ESP8266 (Wi-Fi)", "DHT11 sensors", "Blynk IoT Platform", "KiCad (schematic and PCB)"],
+  },
+  {
+    icon: <FaAws className="skill-icon" />,
+    title: "Cloud & Mobile",
+    items: ["AWS (S3, EC2, IAM)", "Static website hosting", "React Native and Expo", "Firebase Auth and Firestore"],
+  },
+  {
+    icon: <FaLaptopCode className="skill-icon" />,
+    title: "Tools & Core CS",
+    items: ["Git & GitHub", "VS Code", "DBMS", "Operating Systems", "Computer Networks"],
+  },
+  {
+    icon: <FaUsers className="skill-icon" />,
+    title: "Professional Skills",
+    items: ["Teamwork", "Communication", "Technical Writing", "Problem Solving"],
+  },
+];
 
 function Skills() {
   return (
@@ -28,56 +57,21 @@ function Skills() {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          Constantly Learning & Improving
+          What I Work With
         </motion.h2>
 
         <div className="skills-grid">
-
-          <div className="skill-card">
-            <FaJava className="skill-icon" />
-            <h3>Programming</h3>
-
-            <ul>
-              <li>Java (Learning)</li>
-              <li>Problem Solving</li>
-              <li>Object-Oriented Programming</li>
-            </ul>
-          </div>
-
-          <div className="skill-card">
-            <FaAws className="skill-icon" />
-            <h3>Cloud</h3>
-
-            <ul>
-              <li>AWS Certified Cloud Practitioner</li>
-              <li>AWS Fundamentals</li>
-              <li>Cloud Concepts</li>
-            </ul>
-          </div>
-
-          <div className="skill-card">
-            <FaLaptopCode className="skill-icon" />
-            <h3>Tools</h3>
-
-            <ul>
-              <li>Git & GitHub</li>
-              <li>VS Code</li>
-              <li>KiCad</li>
-            </ul>
-          </div>
-
-          <div className="skill-card">
-            <FaUsers className="skill-icon" />
-            <h3>Professional Skills</h3>
-
-            <ul>
-              <li>Teamwork</li>
-              <li>Communication</li>
-              <li>Adaptability</li>
-              <li>Continuous Learning</li>
-            </ul>
-          </div>
-
+          {skillGroups.map((group) => (
+            <div className="skill-card" key={group.title}>
+              {group.icon}
+              <h3>{group.title}</h3>
+              <ul>
+                {group.items.map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
+            </div>
+          ))}
         </div>
 
         <div className="learning-section">
@@ -87,7 +81,7 @@ function Skills() {
           <div className="progress-item">
 
             <div className="progress-title">
-              <span>Java Programming</span>
+              <span>Embedded C and Microcontrollers</span>
               <span>Learning</span>
             </div>
 
@@ -100,8 +94,8 @@ function Skills() {
           <div className="progress-item">
 
             <div className="progress-title">
-              <span>AWS Cloud Services</span>
-              <span>Learning</span>
+              <span>Advanced DSA in Java</span>
+              <span>Practising</span>
             </div>
 
             <div className="progress-bar">
@@ -113,7 +107,7 @@ function Skills() {
           <div className="progress-item">
 
             <div className="progress-title">
-              <span>Artificial Intelligence</span>
+              <span>Machine Learning</span>
               <span>Exploring</span>
             </div>
 
@@ -126,7 +120,7 @@ function Skills() {
           <div className="progress-item">
 
             <div className="progress-title">
-              <span>Mobile App Development</span>
+              <span>Cloud Services on AWS</span>
               <span>Learning</span>
             </div>
 

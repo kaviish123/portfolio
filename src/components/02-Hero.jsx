@@ -2,10 +2,10 @@ import { motion } from "framer-motion";
 import {
   FaAward,
   FaBriefcase,
-  FaCloud,
+  FaCode,
   FaDownload,
   FaEnvelope,
-  FaSeedling,
+  FaFileAlt,
 } from "react-icons/fa";
 import "./02-Hero.css";
 
@@ -26,18 +26,19 @@ function Hero() {
             Kavi <span>Ishwarrya S K</span>
           </h1>
 
-          <h3>Computer Science & Engineering (IoT) Student</h3>
+          <h3>B.E. CSE (Internet of Things), Class of 2027</h3>
 
           <p>
-            Passionate about Java, cloud computing, and software development. 
-            I enjoy building practical projects, exploring new technologies, and 
-            leveraging AI-assisted development tools to accelerate learning, solve problems, 
-            and deliver better software solutions.
+            I build software and IoT projects. So far that includes a ride-sharing
+            app in React Native and Firebase, a website hosted on AWS, PCB layouts
+            in KiCad and a sensor-based home automation system on Arduino and ESP8266.
+            I code mostly in Java and have solved 300+ problems on LeetCode.
           </p>
 
           <div className="hero-tags">
-            <span>☁ AWS Certified Cloud Practitioner</span>
-            <span>☕ Java Learner</span>
+            <span>☕ Java & DSA</span>
+            <span>🔌 Embedded & IoT</span>
+            <span>☁ AWS Cloud</span>
             <span>🚀 Open to Internship Opportunities</span>
           </div>
 
@@ -70,21 +71,21 @@ function Hero() {
             </div>
 
             <div className="stat-card">
-              <FaCloud className="stat-icon" />
-              <h4>AWS</h4>
-              <p>Certified</p>
+              <FaCode className="stat-icon" />
+              <h4>LeetCode</h4>
+              <p>300+ Solved</p>
             </div>
 
             <div className="stat-card">
               <FaBriefcase className="stat-icon" />
-              <h4>Internship</h4>
-              <p>22 Days</p>
+              <h4>Experience</h4>
+              <p>Internship + IoT Training</p>
             </div>
 
             <div className="stat-card">
-              <FaSeedling className="stat-icon" />
-              <h4>Focus</h4>
-              <p>Continuous Learning</p>
+              <FaFileAlt className="stat-icon" />
+              <h4>Research</h4>
+              <p>First Author</p>
             </div>
           </div>
         </motion.div>
@@ -104,7 +105,7 @@ function Hero() {
           }}
         >
           <div className="image-ring">
-            <img src="/profile.jpeg" alt="Kavi Ishwarrya" />
+            <img src="/profile.jpeg" alt="Kavi Ishwarrya S K" />
           </div>
         </motion.div>
       </div>

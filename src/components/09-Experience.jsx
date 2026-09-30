@@ -2,40 +2,57 @@ import { motion } from "framer-motion";
 import {
   FaArrowRight,
   FaIndustry,
-  FaMicrochip
+  FaMicrochip,
+  FaWifi
 } from "react-icons/fa";
 import "./09-Experience.css";
 
 const experiences = [
   {
     icon: <FaMicrochip />,
-    title: "Elite System & Controls",
-    role: "PCB Design Intern",
-    duration: "22-Day Internship",
+    title: "Elite Systems and Controls, Erode",
+    role: "Intern, PCB and Embedded Design",
+    duration: "31 Dec 2025 to 21 Jan 2026 (22 days)",
     description:
-      "Completed a 22-day internship where I gained practical experience in PCB design using KiCad. Worked on circuit design concepts, component placement, PCB layout, and engineering workflows while understanding industry practices.",
+      "Learned embedded systems programming and PCB design. Designed circuit schematics and 8 PCB layouts in the KiCad PCB Editor, following a three-stage workflow of schematic capture, layout optimisation and design validation.",
 
     skills: [
       "KiCad",
-      "PCB Design",
-      "Circuit Design",
-      "Engineering Workflow",
+      "PCB Layout",
+      "Schematic Design",
+      "Embedded Systems",
+    ],
+  },
+
+  {
+    icon: <FaWifi />,
+    title: "Nandha InfoTech",
+    role: "Trainee, IoT Systems",
+    duration: "Jun 2025 to Jul 2025",
+    description:
+      "Built a smart home automation system in Embedded C/C++ using an Arduino, an ESP8266 Wi-Fi module and a DHT11 sensor. Connected it to the Blynk IoT platform to monitor and control temperature and humidity remotely, then tested and documented it with the team.",
+
+    skills: [
+      "Arduino",
+      "ESP8266",
+      "Embedded C/C++",
+      "Blynk IoT",
     ],
   },
 
   {
     icon: <FaIndustry />,
-    title: "Infosys",
-    role: "Industrial Visit",
-    duration: "4 Days",
+    title: "Infosys Springboard",
+    role: "Pragati: Path to Future, Cohort 3",
+    duration: "Dec 2024 to Mar 2025 (11 weeks)",
     description:
-      "Participated in a six-day industrial visit that provided exposure to software development environments, organizational workflows, professional ethics, and real-world IT industry practices.",
+      "An 11-week program with technical coursework and 4 days of on-campus training in communication, teamwork, leadership and problem solving.",
 
     skills: [
-      "Industry Exposure",
-      "Software Development",
-      "Professional Environment",
-      "Learning Experience",
+      "Technical Coursework",
+      "Communication",
+      "Teamwork",
+      "Problem Solving",
     ],
   },
 ];

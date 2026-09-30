@@ -3,7 +3,6 @@ import {
   FaBrain,
   FaChartLine,
   FaDatabase,
-  FaExternalLinkAlt,
   FaFileAlt,
 } from "react-icons/fa";
 import "./07-Research.css";
@@ -48,16 +47,17 @@ function Research() {
             </h2>
 
             <h4>
-              Co-Author • Machine Learning • Retail Analytics
+              First Author • Machine Learning • Retail Analytics • Not yet published
             </h4>
 
             <p>
-              Co-authored a research paper focused on improving retail sales
-              forecasting using ensemble machine learning techniques. The study
-              investigates the impact of customer segmentation and holiday
-              effects by comparing models such as Random Forest, XGBoost, and
-              LightGBM to improve forecasting accuracy and support better
-              business decision-making.
+              A paper on forecasting retail sales with ensemble machine
+              learning. Using real sales transaction data, we studied how
+              customer segments and holidays change daily sales, compared
+              Random Forest, XGBoost and LightGBM, and looked at where the
+              model's errors came from and which features mattered most.
+              Written with Karthik V, Keerthana K and our faculty guide
+              Maheswari S at Nandha Engineering College.
             </p>
 
             <div className="research-topics">
@@ -94,15 +94,8 @@ function Research() {
               </div>
             </div>
 
-            <a
-              href="/research/research_paper.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="research-btn"
-            >
-              <FaExternalLinkAlt />
-              View Research Paper
-            </a>
+            {/* Add the "View Research Paper" button back once the updated
+                paper (with the final author order) is in public/research/ */}
           </div>
         </motion.div>
       </div>

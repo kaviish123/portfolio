@@ -4,50 +4,68 @@ import {
     FaFileAlt,
     FaGraduationCap,
     FaLaptopCode,
-    FaRocket,
+    FaMicrochip,
+    FaTrophy,
+    FaWifi,
 } from "react-icons/fa";
 import "./04-Education.css";
 
 const journey = [
   {
     icon: <FaGraduationCap />,
-    //year: "2023",
-    title: "Started B.E. Computer Science & Engineering (IoT)",
-    subtitle: "Nandha Engineering College",
+    year: "2023",
+    title: "Started B.E. CSE (Internet of Things)",
+    subtitle: "Nandha Engineering College, Erode",
     description:
-      "Began my engineering journey with a passion for software development, cloud computing, and emerging technologies.",
+      "Joined the Computer Science and Engineering (IoT) program. Current CGPA: 8.3 / 10.",
+  },
+  {
+    icon: <FaTrophy />,
+    year: "Mar 2024",
+    title: "2nd Runner-up, Language Geek",
+    subtitle: "SAMHITA '24, Madras Institute of Technology, Anna University",
+    description:
+      "Placed in a technical event at a national-level symposium. Also exhibited my Live Portfolio Website at the Innovation Day '24 Project Expo.",
   },
   {
     icon: <FaCloud />,
-    //year: "2024",
-    title: "AWS Certified Cloud Practitioner",
-    subtitle: "Amazon Web Services",
+    year: "2024 to 2025",
+    title: "Cloud Computing and Infosys Pragati",
+    subtitle: "NPTEL (IIT Kharagpur) and Infosys Springboard",
     description:
-      "Built a strong understanding of cloud concepts, AWS services, security, pricing, and architecture fundamentals.",
+      "Completed the 12-week NPTEL Cloud Computing course and the 11-week Infosys Pragati: Path to Future program.",
   },
   {
-    icon: <FaLaptopCode />,
-    //year: "2025",
-    title: "Elite System & Controls Internship",
-    subtitle: "22-Day Internship",
+    icon: <FaWifi />,
+    year: "Jun 2025",
+    title: "IoT Systems Trainee",
+    subtitle: "Nandha InfoTech",
     description:
-      "Worked on PCB design using KiCad while gaining practical exposure to engineering workflows and hardware design.",
+      "Built a smart home automation system with Arduino, ESP8266 and a DHT11 sensor, controlled remotely through Blynk.",
+  },
+  {
+    icon: <FaMicrochip />,
+    year: "Dec 2025",
+    title: "PCB and Embedded Design Intern",
+    subtitle: "Elite Systems and Controls, Erode",
+    description:
+      "22-day internship in embedded systems programming and PCB design. Designed schematics and 8 PCB layouts in KiCad.",
   },
   {
     icon: <FaFileAlt />,
-    //year: "2026",
-    title: "Research Publication",
-    subtitle: "Sales Forecasting Using AI",
+    year: "2026",
+    title: "First-Author Research Paper",
+    subtitle: "Sales Forecasting Using Customer Segments and Holiday Effects",
     description:
-      "Co-authored a research paper on retail sales forecasting using ensemble machine learning algorithms.",
+      "Wrote a paper on retail sales forecasting with ensemble machine learning. Not yet published.",
   },
   {
-    icon: <FaRocket />,
-    //year: "Present",
-    title: "Building Projects & Preparing for Industry",
-    subtitle: "Software Engineering Journey",
+    icon: <FaLaptopCode />,
+    year: "Now",
+    title: "Final Year and Internship Search",
+    subtitle: "300+ LeetCode problems solved",
     description:
-      "Continuously improving Java, cloud computing, problem solving, and project development while preparing for internships and full-time opportunities.",
+      "Practising data structures and algorithms in Java and looking for internships in embedded systems and software development.",
   },
 ];
 
